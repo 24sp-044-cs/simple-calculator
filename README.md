@@ -4,7 +4,7 @@ A clean and user-friendly calculator web application built with **Python** and *
 
 ## 🌐 Live Demo
 
-👉 [Open the Live App](https://your-app-name.streamlit.app)
+👉 [Open the Live App](simple-calculator-xfon7nn6tcwj7b2qwkunsq)
 
 ## ✨ Features
 
