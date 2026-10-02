@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="Simple Calculator", page_icon="🧮")
 
 st.title("🧮 Simple Calculator")
-st.write("Do numbers enter karein, operation chunein aur result dekhein.")
+st.write("Enter two numbers, choose an operation, and click Calculate to see the result.")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -25,14 +25,14 @@ if st.button("Calculate"):
         result = num1 * num2
     elif operation.startswith("Division"):
         if num2 == 0:
-            st.error("Error: Zero se divide nahi kar sakte!")
+            st.error("Error: Division by zero is not allowed.")
             st.stop()
         result = num1 / num2
     elif operation.startswith("Power"):
         result = num1 ** num2
     else:
         if num2 == 0:
-            st.error("Error: Zero se modulus nahi ho sakta!")
+            st.error("Error: Modulus by zero is not allowed.")
             st.stop()
         result = num1 % num2
 
